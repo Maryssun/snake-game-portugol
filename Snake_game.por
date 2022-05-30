@@ -1,12 +1,18 @@
 programa
 {
-	inclua biblioteca Graficos --> g
+	
+inclua biblioteca Graficos --> g
 	inclua biblioteca Util --> u
 	inclua biblioteca Teclado --> t
 
 	const inteiro LARGURA_JANELA = 600
 	const inteiro ALTURA_JANELA = 600
 
+	inteiro xcabeca_cobra = 275
+	inteiro ycabeca_cobra = 275
+
+	inteiro delay = 120
+	
 	inteiro pontuacao = 0
 
 	logico direita=falso,esquerda=falso,para_cima=falso,para_baixo=falso
@@ -17,8 +23,10 @@ programa
 		enquanto(verdadeiro){
 			pintar_janela()
 			desenhar_painel()
+			direcionar_cobra()
 			desenhar_cabeca_cobra()
 			g.renderizar()
+			u.aguarde(delay)
 		}
 	}
 	funcao montar_janela(){
@@ -39,30 +47,57 @@ programa
 	}
 	funcao desenhar_cabeca_cobra(){
 		g.definir_cor(g.COR_PRETO)
-		g.desenhar_retangulo(275, 275, 25, 25, falso, verdadeiro)
+		g.desenhar_retangulo(xcabeca_cobra, ycabeca_cobra, 25, 25, falso, verdadeiro)
 	
 	}
 	funcao direcionar_cobra(){
 		se(t.tecla_pressionada(t.TECLA_SETA_DIREITA)){
 			direita = verdadeiro
+			esquerda = falso
+			para_cima = falso
+			para_baixo = falso
 		}
 		senao se(t.tecla_pressionada(t.TECLA_SETA_ESQUERDA)){
+			direita = falso
 			esquerda = verdadeiro
+			para_cima = falso
+			para_baixo = falso
 		}	
 		senao se(t.tecla_pressionada(t.TECLA_SETA_ACIMA)){
+			direita = falso
+			esquerda = falso
 			para_cima = verdadeiro
+			para_baixo = falso
 		}	
 		senao se(t.tecla_pressionada(t.TECLA_SETA_ABAIXO)){
+			direita = falso
+			esquerda = falso
+			para_cima = falso
 			para_baixo = verdadeiro
 		}
-	}	
+	}
+	funcao mover_cobra(){
+		se(direita){
+			xcabeca_cobra += 25
+		}
+		senao se(esquerda){
+			xcabeca_cobra -= 25
+		}
+		se(para_cima){
+			ycabeca_cobra -= 25
+		}
+		senao se(para_baixo){
+			ycabeca_cobra += 25
+		}
+	}
 }
+
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1041; 
+ * @POSICAO-CURSOR = 1996; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
