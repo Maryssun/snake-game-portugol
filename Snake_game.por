@@ -56,13 +56,13 @@ programa
 		g.definir_titulo_janela("Snake Game")
 	}
 	funcao pintar_janela(){
-		g.definir_cor(g.COR_BRANCO)
+		g.definir_cor(g.COR_PRETO)
 		g.limpar()
 	}
 	funcao desenhar_painel(){
 		g.definir_cor(g.COR_AZUL)
 		g.desenhar_retangulo(0, 0, LARGURA_JANELA, 50, falso, verdadeiro)
-		g.definir_cor(g.COR_AMARELO)
+		g.definir_cor(g.COR_BRANCO)
 		g.definir_tamanho_texto(25.0)
 		g.desenhar_texto(10, 10, "Pontuação atual: " + pontuacao)
 	}
@@ -185,7 +185,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 4234; 
+ * @POSICAO-CURSOR = 8; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
