@@ -48,11 +48,11 @@ Essa foi minha organização.
 
 ## 3. Tela do jogo
 
-
+<div align="center">
 <img src="./tela-do-jogo.png">
+</div>
 
-
-
+---
 
 ## 4. Autora
 
