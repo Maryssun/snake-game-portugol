@@ -15,7 +15,7 @@
 #### Como jogar:
 
 O objetivo do jogo é alimentar uma cobra o maior tempo possível guiando-a até uma "maçã" no tabuleiro do jogo. A cobra não pode parar de se mover e morre sempre que atinge algo (excluindo maçãs). Como a cobra está crescendo cada vez mais à medida que ela come, fica cada vez mais difícil evitar colisões com a própria cobra ou com a parede, por exemplo. O jogador pode mudar a direção da cabeça da cobra usando as setas do teclado ← ↑ → ↓. Na etapa do jogo, sempre há uma maçã em algum lugar do tabuleiro. Se a cobra come uma maçã, a cobra fica uma célula a mais por passo. Uma nova maçã é colocada em um local aleatório, excluindo todos os lugares cobertos pela cobra. Quando a cobra bate em uma extremidade do tabuleiro, o jogo reinicia, a pontuação zera e ela ressurge no centro do tabuleiro.
-O jogo é bem intuitivo, é mais fácil entendê-lo melhor jogando você mesmo. Existem quatro diferenças entre esta implementação e aquela que você deve fazer. 
+O jogo é bem intuitivo, é mais fácil entendê-lo melhor jogando você mesmo. 
 
 ---
 ## 2. Desenvovilmento 
