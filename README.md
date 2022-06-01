@@ -23,32 +23,38 @@ O jogo é bem intuitivo, é mais fácil entendê-lo melhor jogando você mesmo. 
 Através do [curso](https://moodle.ifrs.edu.br/mod/page/view.php?id=226771&forceview=1) de lógica de programação do Instituto Federal do Rio Grande do Sul, tive a oportunidade de conhecer a linguagem Portugol. O jogo foi desenvolvido com o intuito de praticar a matéria ensinada. O interessante desse exercício é que ele deixa evidente a necessidade de planejar ações para resolver o jogo. E essas ações foram divididas em baby steps, como: 
 
 - Importar bibliotecas necessárias
-- criar função montar_janela( )
+- criar função montar janela
 - criar looping game
-- criar função pintar_janela( )
-- criar função desenhar_painel( )
-- criar função desenhar_cabeca_cobra( )
-- criar função direcionar_cobra( )
-- criar função mover_cobra( )
-- criar função cobra_bateu_parede( )
-- criar função reiniciar( ) 
-<br>
-- criar função cobra_comeu_comida( )
-- criar função sortear_posicao_comida( )
-- criar função desenhar_comida( )
-- criar função atualizar_posicoes_cobra( )
-- criar função desenhar_cauda_cobra( )
-- criar função atualizar_pontuacao( )
-- criar função cobra_se_mordeu( )
-- criar função comida_embaixo_cobra( )
+- criar função pintar janela
+- criar função desenhar painel
+- criar função desenhar cabeca cobra
+- criar função direcionar cobra
+- criar função mover cobra
+- criar função cobra bateu parede
+- criar função reiniciar 
+- criar função cobra comeu comida
+- criar função sortear posicao comida
+- criar função desenhar comida
+- criar função atualizar posicoes cobra
+- criar função desenhar cauda cobra
+- criar função atualizar pontuacao
+- criar função cobra se mordeu
+- criar função comida embaixo cobra
 - criar README
 
-Essa foi minha organização para a criação de cada função. 
+Essa foi minha organização.
 
 ---
 
+## 3. Tela do jogo
 
-## 3. Autora
+
+<img src="./tela-do-jogo.png">
+
+
+
+
+## 4. Autora
 
 <div align= "center">
     <img alt="
