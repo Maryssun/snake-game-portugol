@@ -18,7 +18,7 @@ O objetivo do jogo é alimentar uma cobra o maior tempo possível guiando-a até
 O jogo é bem intuitivo, é mais fácil entendê-lo melhor jogando você mesmo. 
 
 ---
-## 2. Desenvovilmento 
+## 2. Desenvolvimento 
 
 Através do [curso](https://moodle.ifrs.edu.br/mod/page/view.php?id=226771&forceview=1) de lógica de programação do Instituto Federal do Rio Grande do Sul, tive a oportunidade de conhecer a linguagem Portugol. O jogo foi desenvolvido com o intuito de praticar a matéria ensinada. O interessante desse exercício é que ele deixa evidente a necessidade de planejar ações para resolver o jogo. E essas ações foram divididas em baby steps, como: 
 
